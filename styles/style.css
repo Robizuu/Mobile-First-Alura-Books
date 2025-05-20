@@ -13,6 +13,10 @@
     --fonte-principal: "Poppins";
     --azul: #002F52;
     --cor-de-fundo-rodape: #F9f9f9;
+    --fonte-secundaria: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
 body {
