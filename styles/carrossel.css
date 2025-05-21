@@ -20,6 +20,8 @@
 .swiper-pagination {
     position: initial;
     margin: 0.5em 0;
+    position: relative; /* Mantém a posição normal */
+    z-index: 1;
 }
 
 .card__descricao {
@@ -90,6 +92,7 @@
 
     .swiper {
         width: 60%;
+        padding: 2em
     }
 
     .swiper-button-prev, 
@@ -101,5 +104,56 @@
     .card {
     width: 40%;
     margin: 2em  auto;
+    }
+
+    .swiper-slide {
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .swiper-slide:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .botoes__ancora {
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .botoes__ancora:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+    }
+
+    .descricao {
+        margin-right: 2em;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
     }
 }
